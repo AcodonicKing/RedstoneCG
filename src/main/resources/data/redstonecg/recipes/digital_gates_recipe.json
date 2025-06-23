@@ -1,0 +1,17 @@
+{
+    "type": "redstonecg:redcu_crafting",
+    "designation": "digital/normal",
+    "ingredients": [
+        { "item": "redstonecg:smooth_stone_plate"},
+        { "item": "minecraft:redstone" },
+        { "item": "minecraft:quartz" }
+    ],
+    "outputs": [
+        { "item": "redstonecg:floor_xor", "count": 1 },
+        { "item": "redstonecg:floor_nxor", "count": 1 },
+        { "item": "redstonecg:floor_sr_latch", "count": 1 },
+        { "item": "redstonecg:floor_d_latch", "count": 1 },
+        { "item": "redstonecg:floor_t_trigger", "count": 1 },
+        { "item": "redstonecg:floor_jk_trigger", "count": 1 }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "redstonecg:floor_and",
+    "redstonecg:floor_or",
+    "redstonecg:floor_xor",
+    "redstonecg:floor_nand",
+    "redstonecg:floor_nor",
+    "redstonecg:floor_nxor",
+    "redstonecg:floor_buf",
+    "redstonecg:floor_not",
+    "redstonecg:floor_comparator",
+    "redstonecg:floor_n_comparator",
+    "redstonecg:floor_parallel_and",
+    "redstonecg:floor_parallel_or",
+    "redstonecg:floor_parallel_xor",
+    "redstonecg:floor_parallel_nand",
+    "redstonecg:floor_parallel_nor",
+    "redstonecg:floor_parallel_nxor",
+    "redstonecg:floor_parallel_comparator",
+    "redstonecg:floor_parallel_n_comparator",
+    "redstonecg:floor_sr_latch",
+    "redstonecg:floor_d_latch",
+    "redstonecg:floor_t_trigger",
+    "redstonecg:floor_jk_trigger",
+    "redstonecg:floor_parallel_sr_latch",
+    "redstonecg:floor_parallel_d_latch"
+  ]
+}

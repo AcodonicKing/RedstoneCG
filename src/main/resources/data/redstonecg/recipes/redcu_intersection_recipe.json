@@ -1,0 +1,11 @@
+{
+    "type": "redstonecg:redcu_crafting",
+    "designation": "wires/normal",
+    "ingredients": [
+        { "item": "redstonecg:floor_red_cu_wire"},
+        { "item": "redstonecg:floor_red_cu_wire"}
+    ],
+    "outputs": [
+        { "item": "redstonecg:floor_red_cu_intersection", "count": 1 }
+    ]
+}

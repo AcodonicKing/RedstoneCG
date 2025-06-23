@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aa",
+    "bb",
+    "bb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone"
+    },
+    "b": {
+      "item": "minecraft:smooth_stone"
+    }
+  },
+  "result": {
+    "item": "redstonecg:red_cu_crafter",
+    "count": 1
+  }
+}

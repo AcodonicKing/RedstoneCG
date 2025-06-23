@@ -1,0 +1,16 @@
+{
+    "type": "redstonecg:redcu_crafting",
+    "designation": "digital/normal",
+    "ingredients": [
+        { "item": "redstonecg:smooth_stone_plate"},
+        { "item": "minecraft:redstone" }
+    ],
+    "outputs": [
+        { "item": "redstonecg:floor_and", "count": 1 },
+        { "item": "redstonecg:floor_or", "count": 1 },
+        { "item": "redstonecg:floor_nand", "count": 1 },
+        { "item": "redstonecg:floor_nor", "count": 1 },
+        { "item": "redstonecg:floor_buf", "count": 1 },
+        { "item": "redstonecg:floor_not", "count": 1 }
+    ]
+}

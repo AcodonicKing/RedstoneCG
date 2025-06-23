@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "redstonecg:blocks/floor_universal_indicator",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "redstonecg:floor_universal_indicator"
+        }
+      ]
+    }
+  ]
+}

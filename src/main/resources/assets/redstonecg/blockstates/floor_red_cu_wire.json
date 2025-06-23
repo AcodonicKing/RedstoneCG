@@ -1,0 +1,38 @@
+{
+	"multipart":[
+		{"when":{"facing":"north"},"apply":{"model":"redstonecg:block/red_cu_wire"}},
+		{"when":{"facing":"east"},"apply":{"model":"redstonecg:block/red_cu_wire", "y":90}},
+		{"when":{"facing":"south"},"apply":{"model":"redstonecg:block/red_cu_wire", "y":180}},
+		{"when":{"facing":"west"},"apply":{"model":"redstonecg:block/red_cu_wire", "y":270}},
+
+		{"when":{"connection":"0|3","facing":"north"},"apply":{"model":"redstonecg:block/red_cu_wire", "y":180}},
+		{"when":{"connection":"0|3","facing":"east"},"apply":{"model":"redstonecg:block/red_cu_wire", "y":270}},
+		{"when":{"connection":"0|3","facing":"south"},"apply":{"model":"redstonecg:block/red_cu_wire"}},
+		{"when":{"connection":"0|3","facing":"west"},"apply":{"model":"redstonecg:block/red_cu_wire", "y":90}},
+
+		{"when":{"connection":"1|2|3","facing":"north"},"apply":{"model":"redstonecg:block/red_cu_wire", "y":90}},
+		{"when":{"connection":"1|2|3","facing":"east"},"apply":{"model":"redstonecg:block/red_cu_wire", "y":180}},
+		{"when":{"connection":"1|2|3","facing":"south"},"apply":{"model":"redstonecg:block/red_cu_wire", "y":270}},
+		{"when":{"connection":"1|2|3","facing":"west"},"apply":{"model":"redstonecg:block/red_cu_wire"}},
+
+		{"when":{"connection":"2|3","facing":"north"},"apply":{"model":"redstonecg:block/red_cu_wire", "y":270}},
+		{"when":{"connection":"2|3","facing":"east"},"apply":{"model":"redstonecg:block/red_cu_wire"}},
+		{"when":{"connection":"2|3","facing":"south"},"apply":{"model":"redstonecg:block/red_cu_wire", "y":90}},
+		{"when":{"connection":"2|3","facing":"west"},"apply":{"model":"redstonecg:block/red_cu_wire", "y":180}},
+
+		{"when":{"connection":"0","facing":"north|south"},"apply":{"model":"redstonecg:block/red_cu_knot_i"}},
+		{"when":{"connection":"0","facing":"east|west"},"apply":{"model":"redstonecg:block/red_cu_knot_i", "y":90}},
+
+		{"when":{"connection":"1","facing":"north"},"apply":{"model":"redstonecg:block/red_cu_knot_l"}},
+		{"when":{"connection":"1","facing":"east"},"apply":{"model":"redstonecg:block/red_cu_knot_l", "y":90}},
+		{"when":{"connection":"1","facing":"south"},"apply":{"model":"redstonecg:block/red_cu_knot_l", "y":180}},
+		{"when":{"connection":"1","facing":"west"},"apply":{"model":"redstonecg:block/red_cu_knot_l", "y":270}},
+
+		{"when":{"connection":"2","facing":"north"},"apply":{"model":"redstonecg:block/red_cu_knot_t"}},
+		{"when":{"connection":"2","facing":"east"},"apply":{"model":"redstonecg:block/red_cu_knot_t", "y":90}},
+		{"when":{"connection":"2","facing":"south"},"apply":{"model":"redstonecg:block/red_cu_knot_t", "y":180}},
+		{"when":{"connection":"2","facing":"west"},"apply":{"model":"redstonecg:block/red_cu_knot_t", "y":270}},
+
+		{"when":{"connection":"3"},"apply":{"model":"redstonecg:block/red_cu_knot_x"}}
+  	]
+}

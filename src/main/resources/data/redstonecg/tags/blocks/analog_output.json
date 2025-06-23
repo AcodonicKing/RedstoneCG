@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "redstonecg:floor_analog_bias",
+    "redstonecg:floor_analog_gain",
+    "redstonecg:floor_analog_pass",
+    "redstonecg:floor_analog_memory",
+    "redstonecg:floor_analog_subtractor",
+    "redstonecg:floor_analog_differential",
+    "redstonecg:floor_analog_source",
+    "redstonecg:floor_parallel_analog_bias",
+    "redstonecg:floor_parallel_analog_gain",
+    "redstonecg:floor_parallel_analog_pass",
+    "redstonecg:floor_parallel_analog_differential",
+    "redstonecg:floor_parallel_analog_memory",
+    "redstonecg:floor_parallel_analog_subtractor",
+    "redstonecg:floor_analog_max",
+    "redstonecg:floor_analog_min",
+    "redstonecg:floor_parallel_analog_max",
+    "redstonecg:floor_parallel_analog_min",
+    "redstonecg:floor_parallel_line_output",
+    "redstonecg:floor_forward_path_selector",
+    "redstonecg:floor_one_way_through_gate",
+    "redstonecg:floor_one_way_through_not_gate",
+    "redstonecg:floor_parallel_one_way_path_selector",
+    "redstonecg:floor_parallel_one_way_through_gate",
+    "redstonecg:floor_parallel_one_way_through_not_gate",
+    "redstonecg:floor_reversed_path_selector"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+	"multipart":[
+		{
+			"when":{"power":"0","facing":"north"},
+			"apply":{"model":"redstonecg:block/parallel/analog/subtractor_off"}
+		},
+		{
+			"when":{"power":"0","facing":"east"},
+			"apply":{"model":"redstonecg:block/parallel/analog/subtractor_off", "y":90}
+		},
+		{
+			"when":{"power":"0","facing":"south"},
+			"apply":{"model":"redstonecg:block/parallel/analog/subtractor_off", "y":180}
+		},
+		{
+			"when":{"power":"0","facing":"west"},
+			"apply":{"model":"redstonecg:block/parallel/analog/subtractor_off", "y":270}
+		},
+		{
+			"when":{"power":"1|2|3|4|5|6|7|8|9|10|11|12|13|14|15","facing":"north"},
+			"apply":{"model":"redstonecg:block/parallel/analog/subtractor_on"}
+		},
+		{
+			"when":{"power":"1|2|3|4|5|6|7|8|9|10|11|12|13|14|15","facing":"east"},
+			"apply":{"model":"redstonecg:block/parallel/analog/subtractor_on", "y":90}
+		},
+		{
+			"when":{"power":"1|2|3|4|5|6|7|8|9|10|11|12|13|14|15","facing":"south"},
+			"apply":{"model":"redstonecg:block/parallel/analog/subtractor_on", "y":180}
+		},
+		{
+			"when":{"power":"1|2|3|4|5|6|7|8|9|10|11|12|13|14|15","facing":"west"},
+			"apply":{"model":"redstonecg:block/parallel/analog/subtractor_on", "y":270}
+		},
+		{
+			"when":{"facing":"north","connection":0},
+			"apply":{"model":"redstonecg:block/pins/b_ss_alt"}
+		},
+		{
+			"when":{"facing":"east","connection":0},
+			"apply":{"model":"redstonecg:block/pins/b_ss_alt", "y":90}
+		},
+		{
+			"when":{"facing":"south","connection":0},
+			"apply":{"model":"redstonecg:block/pins/b_ss_alt", "y":180}
+		},
+		{
+			"when":{"facing":"west","connection":0},
+			"apply":{"model":"redstonecg:block/pins/b_ss_alt", "y":270}
+		},
+		{
+			"when":{"facing":"north","connection":1},
+			"apply":{"model":"redstonecg:block/pins/ss_b_alt"}
+		},
+		{
+			"when":{"facing":"east","connection":1},
+			"apply":{"model":"redstonecg:block/pins/ss_b_alt", "y":90}
+		},
+		{
+			"when":{"facing":"south","connection":1},
+			"apply":{"model":"redstonecg:block/pins/ss_b_alt", "y":180}
+		},
+		{
+			"when":{"facing":"west","connection":1},
+			"apply":{"model":"redstonecg:block/pins/ss_b_alt", "y":270}
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "redstonecg:red_cu_mixture"
+  },
+  "result": "redstonecg:red_cu_ingot"
+}

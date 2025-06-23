@@ -1,0 +1,12 @@
+{
+    "type": "redstonecg:redcu_crafting",
+    "designation": "indicators/normal",
+    "ingredients": [
+        { "item": "redstonecg:smooth_stone_plate"},
+        { "item": "redstonecg:red_cu_ingot" },
+        { "item": "minecraft:quartz" }
+    ],
+    "outputs": [
+        { "item": "redstonecg:red_cu_meter", "count": 1 }
+    ]
+}

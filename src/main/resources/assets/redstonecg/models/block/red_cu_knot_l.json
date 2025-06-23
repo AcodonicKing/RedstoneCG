@@ -1,0 +1,9 @@
+{
+  "parent": "redstonecg:custom/redcuknotl",
+  "textures": {
+    "all": "redstonecg:block/red_cu_wire",
+    "particle": "redstonecg:block/red_cu_wire",
+    "0": "redstonecg:block/red_cu_wire"
+  },
+  "render_type": "solid"
+}

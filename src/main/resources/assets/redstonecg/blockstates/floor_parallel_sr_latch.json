@@ -1,0 +1,68 @@
+{
+	"multipart":[
+		{
+			"when":{"output":"false","facing":"north"},
+			"apply":{"model":"redstonecg:block/parallel/digital/sr_latch_off"}
+		},
+		{
+			"when":{"output":"false","facing":"east"},
+			"apply":{"model":"redstonecg:block/parallel/digital/sr_latch_off", "y":90}
+		},
+		{
+			"when":{"output":"false","facing":"south"},
+			"apply":{"model":"redstonecg:block/parallel/digital/sr_latch_off", "y":180}
+		},
+		{
+			"when":{"output":"false","facing":"west"},
+			"apply":{"model":"redstonecg:block/parallel/digital/sr_latch_off", "y":270}
+		},
+		{
+			"when":{"output":"true","facing":"north"},
+			"apply":{"model":"redstonecg:block/parallel/digital/sr_latch_on"}
+		},
+		{
+			"when":{"output":"true","facing":"east"},
+			"apply":{"model":"redstonecg:block/parallel/digital/sr_latch_on", "y":90}
+		},
+		{
+			"when":{"output":"true","facing":"south"},
+			"apply":{"model":"redstonecg:block/parallel/digital/sr_latch_on", "y":180}
+		},
+		{
+			"when":{"output":"true","facing":"west"},
+			"apply":{"model":"redstonecg:block/parallel/digital/sr_latch_on", "y":270}
+		},
+		{
+			"when":{"facing":"north","connection":0},
+			"apply":{"model":"redstonecg:block/pins/b_ss_alt"}
+		},
+		{
+			"when":{"facing":"east","connection":0},
+			"apply":{"model":"redstonecg:block/pins/b_ss_alt", "y":90}
+		},
+		{
+			"when":{"facing":"south","connection":0},
+			"apply":{"model":"redstonecg:block/pins/b_ss_alt", "y":180}
+		},
+		{
+			"when":{"facing":"west","connection":0},
+			"apply":{"model":"redstonecg:block/pins/b_ss_alt", "y":270}
+		},
+		{
+			"when":{"facing":"north","connection":1},
+			"apply":{"model":"redstonecg:block/pins/ss_b_alt"}
+		},
+		{
+			"when":{"facing":"east","connection":1},
+			"apply":{"model":"redstonecg:block/pins/ss_b_alt", "y":90}
+		},
+		{
+			"when":{"facing":"south","connection":1},
+			"apply":{"model":"redstonecg:block/pins/ss_b_alt", "y":180}
+		},
+		{
+			"when":{"facing":"west","connection":1},
+			"apply":{"model":"redstonecg:block/pins/ss_b_alt", "y":270}
+		}
+	]
+}

@@ -1,0 +1,56 @@
+{
+	"multipart": [
+		{
+			"when":{"facing":"north"},
+			"apply":{"model":"redstonecg:block/analog_source"}
+		},
+		{
+			"when":{"facing":"east"},
+			"apply":{"model":"redstonecg:block/analog_source", "y":90}
+		},
+		{
+			"when":{"facing":"south"},
+			"apply":{"model":"redstonecg:block/analog_source", "y":180}
+		},
+		{
+			"when":{"facing":"west"},
+			"apply":{"model":"redstonecg:block/analog_source", "y":270}
+		},
+		
+		{"when":{"connection":"0|2|4|6|8|10|12|14","facing":"north"},
+		"apply": {"model": "redstonecg:block/pins/f"}},
+		{"when":{"connection":"0|2|4|6|8|10|12|14","facing":"east"},
+		"apply": {"model": "redstonecg:block/pins/f","y": 90}},
+		{"when":{"connection":"0|2|4|6|8|10|12|14","facing":"south"},
+		"apply": {"model": "redstonecg:block/pins/f","y": 180}},
+		{"when":{"connection":"0|2|4|6|8|10|12|14","facing":"west"},
+		"apply": {"model": "redstonecg:block/pins/f","y": 270}},
+		
+		{"when":{"connection":"1|2|5|6|9|10|13|14","facing":"north"},
+		"apply": {"model": "redstonecg:block/pins/r"}},
+		{"when":{"connection":"1|2|5|6|9|10|13|14","facing":"east"},
+		"apply": {"model": "redstonecg:block/pins/r","y": 90}},
+		{"when":{"connection":"1|2|5|6|9|10|13|14","facing":"south"},
+		"apply": {"model": "redstonecg:block/pins/r","y": 180}},
+		{"when":{"connection":"1|2|5|6|9|10|13|14","facing":"west"},
+		"apply": {"model": "redstonecg:block/pins/r","y": 270}},
+
+		{"when":{"connection":"3|4|5|6|11|12|13|14","facing":"north"},
+		"apply": {"model": "redstonecg:block/pins/b"}},
+		{"when":{"connection":"3|4|5|6|11|12|13|14","facing":"east"},
+		"apply": {"model": "redstonecg:block/pins/b","y": 90}},
+		{"when":{"connection":"3|4|5|6|11|12|13|14","facing":"south"},
+		"apply": {"model": "redstonecg:block/pins/b","y": 180}},
+		{"when":{"connection":"3|4|5|6|11|12|13|14","facing":"west"},
+		"apply": {"model": "redstonecg:block/pins/b","y": 270}},
+
+		{"when":{"connection":"7|8|9|10|11|12|13|14","facing":"north"},
+		"apply": {"model": "redstonecg:block/pins/l"}},
+		{"when":{"connection":"7|8|9|10|11|12|13|14","facing":"east"},
+		"apply": {"model": "redstonecg:block/pins/l","y": 90}},
+		{"when":{"connection":"7|8|9|10|11|12|13|14","facing":"south"},
+		"apply": {"model": "redstonecg:block/pins/l","y": 180}},
+		{"when":{"connection":"7|8|9|10|11|12|13|14","facing":"west"},
+		"apply": {"model": "redstonecg:block/pins/l","y": 270}}
+	]
+}

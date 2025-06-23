@@ -1,0 +1,11 @@
+{
+    "type": "redstonecg:redcu_crafting",
+    "designation": "wires/parallel",
+    "ingredients": [
+        { "item": "redstonecg:smooth_stone_plate"},
+        { "item": "minecraft:redstone" }
+    ],
+    "outputs": [
+        { "item": "redstonecg:floor_parallel_line_output", "count": 1 }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "redstonecg:block/smooth_stone_plate"
+    },
+    "facing=east": {
+      "model": "redstonecg:block/smooth_stone_plate",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "redstonecg:block/smooth_stone_plate",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "redstonecg:block/smooth_stone_plate",
+      "y": 270
+    }
+  }
+}

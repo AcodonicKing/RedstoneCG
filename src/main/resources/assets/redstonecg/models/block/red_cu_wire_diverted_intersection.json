@@ -1,0 +1,9 @@
+{
+  "parent": "redstonecg:custom/redcuwiredivertedintersection",
+  "textures": {
+    "all": "redstonecg:block/red_cu_intersection",
+    "particle": "redstonecg:block/red_cu_intersection",
+    "0": "redstonecg:block/red_cu_intersection"
+  },
+  "render_type": "solid"
+}
