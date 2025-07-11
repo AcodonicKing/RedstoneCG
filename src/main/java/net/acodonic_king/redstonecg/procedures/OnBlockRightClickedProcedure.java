@@ -9,15 +9,16 @@ public class OnBlockRightClickedProcedure {
 	public static int execute(LevelAccessor world, BlockPos pos) {
 		return execute(world, pos, world.getBlockState(pos));
 	}
-	public static int execute(LevelAccessor world, BlockPos pos, BlockState blockstate) {
+	public static int execute(LevelAccessor world, BlockPos pos, BlockState blockstate) {return execute(world, pos, blockstate, 3);}
+	public static int execute(LevelAccessor world, BlockPos pos, BlockState blockstate, int flags) {
 		if (blockstate.getBlock().getStateDefinition().getProperty("connection") instanceof IntegerProperty _integerProp) {
 			int connection = blockstate.getValue(_integerProp) + 1;
 			if (_integerProp.getPossibleValues().contains(connection))
 			{
-				world.setBlock(pos, blockstate.setValue(_integerProp, connection), 3);
+				world.setBlock(pos, blockstate.setValue(_integerProp, connection), flags);
 				return connection;
 			} else {
-				world.setBlock(pos, blockstate.setValue(_integerProp, 0), 3);
+				world.setBlock(pos, blockstate.setValue(_integerProp, 0), flags);
 			}
 		}
 		return 0;

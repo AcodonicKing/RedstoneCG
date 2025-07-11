@@ -6,8 +6,8 @@
         { "item": "minecraft:redstone" }
     ],
     "outputs": [
-        { "item": "redstonecg:floor_seven_segment_indicator", "count": 1 },
-        { "item": "redstonecg:floor_clock_filling_indicator", "count": 1 },
-        { "item": "redstonecg:floor_orb_indicator", "count": 1 }
+        { "item": "redstonecg:seven_segment_indicator", "count": 1 },
+        { "item": "redstonecg:clock_filling_indicator", "count": 1 },
+        { "item": "redstonecg:orb_indicator", "count": 1 }
     ]
 }

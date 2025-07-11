@@ -1,9 +1,0 @@
-{
-  "parent": "redstonecg:custom/component",
-  "textures": {
-    "all": "redstonecg:block/parallel/analog/pass_on",
-    "particle": "redstonecg:block/parallel/analog/pass_on",
-    "0": "redstonecg:block/parallel/analog/pass_on"
-  },
-  "render_type": "solid"
-}

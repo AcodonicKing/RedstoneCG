@@ -91,6 +91,7 @@ public class RedstonecgModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "redstonecg_mapvars";
 		public boolean enableredcuwireautoconnect = false;
+		public boolean canSurviveAnyCase = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -100,11 +101,13 @@ public class RedstonecgModVariables {
 
 		public void read(CompoundTag nbt) {
 			enableredcuwireautoconnect = nbt.getBoolean("enableredcuwireautoconnect");
+			canSurviveAnyCase = nbt.getBoolean("can_survive");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("enableredcuwireautoconnect", enableredcuwireautoconnect);
+			nbt.putBoolean("can_survive", canSurviveAnyCase);
 			return nbt;
 		}
 

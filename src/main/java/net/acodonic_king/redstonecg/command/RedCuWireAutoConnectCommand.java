@@ -17,9 +17,9 @@ import net.minecraft.commands.Commands;
 
 import com.mojang.brigadier.arguments.BoolArgumentType;
 
-@Mod.EventBusSubscriber
+//@Mod.EventBusSubscriber
 public class RedCuWireAutoConnectCommand {
-	@SubscribeEvent
+	//@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
 		event.getDispatcher().register(Commands.literal("redcuwireautoconnect")
 

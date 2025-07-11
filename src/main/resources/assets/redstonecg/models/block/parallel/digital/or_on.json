@@ -1,9 +1,0 @@
-{
-  "parent": "redstonecg:custom/component",
-  "textures": {
-    "all": "redstonecg:block/parallel/digital/or_on",
-    "particle": "redstonecg:block/parallel/digital/or_on",
-    "0": "redstonecg:block/parallel/digital/or_on"
-  },
-  "render_type": "solid"
-}

@@ -1,9 +1,0 @@
-{
-  "parent": "redstonecg:custom/component",
-  "textures": {
-    "all": "redstonecg:block/analog_source",
-    "particle": "redstonecg:block/analog_source",
-    "0": "redstonecg:block/analog_source"
-  },
-  "render_type": "solid"
-}

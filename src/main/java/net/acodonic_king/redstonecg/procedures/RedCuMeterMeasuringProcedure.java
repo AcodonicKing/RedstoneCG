@@ -33,7 +33,7 @@ public class RedCuMeterMeasuringProcedure {
 			HandedItem = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
 		}
 		if (HandedItem.getItem() == RedstonecgModItems.RED_CU_METER.get()) {
-			return "Redstone Signal: " + HandedItem.getOrCreateTag().getDouble("measuring");
+			return "Redstone Signal: " + HandedItem.getOrCreateTag().getString("measuring");
 		}
 		return "";
 	}

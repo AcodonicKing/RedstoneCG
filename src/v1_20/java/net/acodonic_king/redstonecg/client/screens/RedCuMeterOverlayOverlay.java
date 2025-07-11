@@ -1,6 +1,7 @@
 
 package net.acodonic_king.redstonecg.client.screens;
 
+import net.acodonic_king.redstonecg.default_gui_classes.AbstractContainerScreenRide;
 import net.acodonic_king.redstonecg.default_gui_classes.ScreenTools;
 import net.acodonic_king.redstonecg.procedures.RedCuMeterMeasuringProcedure;
 import net.minecraft.client.Minecraft;
@@ -30,7 +31,7 @@ public class RedCuMeterOverlayOverlay {
 			z = entity.getZ();
 		}*/
 		if (RedCuMeterMeasuringProcedure.IsMeasuringBool(entity)) {
-			ScreenTools.drawString(Minecraft.getInstance().font, event.getGuiGraphics(), RedCuMeterMeasuringProcedure.MeasureString(entity), w / 2 + 91, h / 2 + 62, 0x00F0F0F0);
+			ScreenTools.drawString(Minecraft.getInstance().font, new AbstractContainerScreenRide.ScreenStack(event.getGuiGraphics()), RedCuMeterMeasuringProcedure.MeasureString(entity), w / 2 + 91, h / 2 + 62, 0x00F0F0F0);
 		}
 	}
 }

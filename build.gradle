@@ -121,8 +121,12 @@ sourceSets{
     v1_19_3{java {srcDir 'src/v1_19_3/java'}}
     v1_19_4{java {srcDir 'src/v1_19_4/java'}}
     v1_20{java {srcDir 'src/v1_20/java'}}
+    sp1_19_2{java {srcDir 'src/sp1_19_2/java'}}
+    sa1_19_3{java {srcDir 'src/sa1_19_3/java'}}
 }
 if (minecraft_version == "1.19" || minecraft_version == "1.19.1" || minecraft_version == "1.19.2" || minecraft_version == "1.19.3" || minecraft_version == "1.19.4"){sourceSets.main.java.srcDirs += sourceSets.core1_19.java.srcDirs}
+if (minecraft_version == "1.19" || minecraft_version == "1.19.1" || minecraft_version == "1.19.2"){sourceSets.main.java.srcDirs += sourceSets.sp1_19_2.java.srcDirs}
+if (minecraft_version == "1.19.3" || minecraft_version == "1.19.4"){sourceSets.main.java.srcDirs += sourceSets.sa1_19_3.java.srcDirs}
 if (minecraft_version == "1.19") {sourceSets.main.java.srcDirs += sourceSets.v1_19.java.srcDirs}
 if (minecraft_version == "1.19.1") {sourceSets.main.java.srcDirs += sourceSets.v1_19_1.java.srcDirs}
 if (minecraft_version == "1.19.2") {sourceSets.main.java.srcDirs += sourceSets.v1_19_2.java.srcDirs}

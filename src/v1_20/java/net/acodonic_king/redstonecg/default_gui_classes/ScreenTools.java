@@ -1,27 +1,64 @@
 package net.acodonic_king.redstonecg.default_gui_classes;
 
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.*;
+import net.acodonic_king.redstonecg.procedures.RCGMatrix;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.gui.Font;
 
 public class ScreenTools {
+    public static ResourceLocation _image;
     public static ResourceLocation getImage(String name){
         return new ResourceLocation(name);
     }
     public static ResourceLocation getImage(String namespace, String identification){
         return new ResourceLocation(namespace, identification);
     }
-    public static void renderRectangle(GuiGraphics gui, int color, int x, int y, int l, int w, int h) {
-        gui.pose().pushPose();
-        gui.pose().translate(0, 0, l);
-        gui.fill(x,y,x+w,y+h,color);
-        gui.pose().popPose();
+    public static void renderRectangle(AbstractContainerScreenRide.ScreenStack ms, int color, int x, int y, int l, int w, int h) {
+        ms.stack.pose().pushPose();
+        ms.stack.pose().translate(0, 0, l);
+        ms.stack.fill(x,y,x+w,y+h,color);
+        ms.stack.pose().popPose();
     }
-    public static void blitTexture(Screen the, GuiGraphics ms, int x, int y, int w, int h, ResourceLocation image){
-        ms.blit(image, x, y, 0, 0, w, h, w, h);
+    public static void blitTexture(Screen the, AbstractContainerScreenRide.ScreenStack ms, int x, int y, int w, int h, ResourceLocation image){
+        ms.stack.blit(image, x, y, 0, 0, w, h, w, h);
     }
-    public static void drawString(Font font, GuiGraphics ms, String text, int x, int y, int c){
-        ms.drawString(font, text, x, y, c);
+    public static void drawString(Font font, AbstractContainerScreenRide.ScreenStack ms, String text, int x, int y, int c){
+        ms.stack.drawString(font, text, x, y, c);
+    }
+    public static void setTexture(ResourceLocation image){
+        _image = image;
+        RenderSystem.setShaderTexture(0, image);
+    }
+    public static void blitSetTexture(Screen the, AbstractContainerScreenRide.ScreenStack ms, int x, int y, int w, int h){
+        ms.stack.blit(_image, x, y, 0, 0, w, h, w, h);
+    }
+    public static void blitSetTextureRegion(AbstractContainerScreenRide.ScreenStack ms, int OnScreenLeft, int OnScreenTop, int RenderWidthPx, int RenderHeightPx, int OnImageLeftPx, int OnImageTopPx, int ImageWidth, int ImageHeight){
+        float OnImageLeft = (float) OnImageLeftPx / ImageWidth;
+        float OnImageRight = (float) (OnImageLeftPx + RenderWidthPx) / ImageWidth;
+        float OnImageTop = (float) OnImageTopPx / ImageHeight;
+        float OnImageBottom = (float) (OnImageTopPx + RenderHeightPx) / ImageHeight;
+        blitSetTextureRegion(
+                ms,
+                OnScreenLeft,OnScreenLeft + RenderWidthPx,
+                OnScreenTop,OnScreenTop+ RenderHeightPx,
+                0,
+                OnImageLeft, OnImageRight,
+                OnImageTop, OnImageBottom
+        );
+    }
+    public static void blitSetTextureRegion(AbstractContainerScreenRide.ScreenStack ms, int OnScreenLeft, int OnScreenRight, int OnScreenTop, int OnScreenBottom, int ScreenLayer, float OnImageLeft, float OnImageRight, float OnImageTop, float OnImageBottom) {
+        RCGMatrix.M4F matrix4f = new RCGMatrix.M4F(ms.stack.pose().last().pose());
+        RenderSystem.setShader(GameRenderer::getPositionTexShader);
+        BufferBuilder bufferbuilder = Tesselator.getInstance().getBuilder();
+        bufferbuilder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_TEX);
+        bufferbuilder.vertex(matrix4f.matrix, (float) OnScreenLeft,  (float) OnScreenBottom, (float) ScreenLayer).uv(OnImageLeft,  OnImageBottom).endVertex();
+        bufferbuilder.vertex(matrix4f.matrix, (float) OnScreenRight, (float) OnScreenBottom, (float) ScreenLayer).uv(OnImageRight, OnImageBottom).endVertex();
+        bufferbuilder.vertex(matrix4f.matrix, (float) OnScreenRight, (float) OnScreenTop,    (float) ScreenLayer).uv(OnImageRight, OnImageTop   ).endVertex();
+        bufferbuilder.vertex(matrix4f.matrix, (float) OnScreenLeft,  (float) OnScreenTop,    (float) ScreenLayer).uv(OnImageLeft,  OnImageTop   ).endVertex();
+        BufferUploader.drawWithShader(bufferbuilder.end());
     }
 }

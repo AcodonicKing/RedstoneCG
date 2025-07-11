@@ -4,9 +4,9 @@
     "ingredients": [
         { "item": "redstonecg:smooth_stone_plate"},
         { "item": "minecraft:redstone" },
-        { "item": "redstonecg:floor_red_cu_wire"}
+        { "item": "redstonecg:redcu_wire"}
     ],
     "outputs": [
-        { "item": "redstonecg:floor_redstone_to_red_cu_converter", "count": 1 }
+        { "item": "redstonecg:redstone_to_redcu_converter", "count": 1 }
     ]
 }

@@ -26,12 +26,12 @@ public class RedstonecgModMissingMappingsHandler {
                 for (Map.Entry<String, JsonElement> entry : json.entrySet()) {
                     REMAP_TABLE.put(entry.getKey(), new ResourceLocation(RedstonecgMod.MODID, entry.getValue().getAsString()));
                 }
-                System.out.println("[Remap] Loaded " + REMAP_TABLE.size() + " block remaps.");
+                RedstonecgMod.LOGGER.info("[Remap] Loaded " + REMAP_TABLE.size() + " block remaps.");
             } else {
-                System.err.println("[Remap] block_remap.json not found in resources.");
+                RedstonecgMod.LOGGER.info("[Remap] block_remap.json not found in resources.");
             }
         } catch (Exception e) {
-            System.err.println("[Remap] Failed to load block_remap.json: " + e.getMessage());
+            RedstonecgMod.LOGGER.info("[Remap] Failed to load block_remap.json: " + e.getMessage());
         }
     }
     @SubscribeEvent
@@ -45,11 +45,12 @@ public class RedstonecgModMissingMappingsHandler {
                         Block newBlock = ForgeRegistries.BLOCKS.getValue(newId);
                         if (newBlock != null) {
                             mapping.remap(newBlock);
-                            System.out.println("[Remap] Remapped block: " + oldPath + " -> " + newId);
+                            RedstonecgMod.LOGGER.info("[Remap] Remapped block: " + oldPath + " -> " + newId);
                         } else {
-                            System.err.println("[Remap] Target block not found: " + newId);
+                            RedstonecgMod.LOGGER.info("[Remap] Target block not found: " + newId);
                         }
                     }
-                });
+                }
+        );
     }
 }

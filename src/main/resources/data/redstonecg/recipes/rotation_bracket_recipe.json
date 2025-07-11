@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "result": {
+    "item": "redstonecg:rotation_bracket",
+    "count": 1
+  }
+}

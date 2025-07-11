@@ -1,5 +1,5 @@
 {
-  "parent": "redstonecg:custom/component",
+  "parent": "redstonecg:custom/floor_component",
   "textures": {
     "all": "redstonecg:block/orb_indicator/ui14",
     "particle": "redstonecg:block/orb_indicator/ui14",

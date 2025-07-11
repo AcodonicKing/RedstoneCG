@@ -7,11 +7,11 @@
     { "item": "minecraft:quartz" }
   ],
   "outputs": [
-    { "item": "redstonecg:floor_comparator", "count": 1 },
-    { "item": "redstonecg:floor_n_comparator", "count": 1 },
-    { "item": "redstonecg:floor_forward_path_selector", "count": 1 },
-    { "item": "redstonecg:floor_reversed_path_selector", "count": 1 },
-    { "item": "redstonecg:floor_one_way_through_gate", "count": 1 },
-    { "item": "redstonecg:floor_one_way_through_not_gate", "count": 1 }
+    { "item": "redstonecg:normal_comparator", "count": 1 },
+    { "item": "redstonecg:normal_n_comparator", "count": 1 },
+    { "item": "redstonecg:normal_forward_path_selector", "count": 1 },
+    { "item": "redstonecg:normal_reversed_path_selector", "count": 1 },
+    { "item": "redstonecg:normal_one_way_through_gate", "count": 1 },
+    { "item": "redstonecg:normal_one_way_through_not_gate", "count": 1 }
   ]
 }

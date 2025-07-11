@@ -7,11 +7,11 @@
         { "item": "minecraft:quartz" }
     ],
     "outputs": [
-        { "item": "redstonecg:floor_xor", "count": 1 },
-        { "item": "redstonecg:floor_nxor", "count": 1 },
-        { "item": "redstonecg:floor_sr_latch", "count": 1 },
-        { "item": "redstonecg:floor_d_latch", "count": 1 },
-        { "item": "redstonecg:floor_t_trigger", "count": 1 },
-        { "item": "redstonecg:floor_jk_trigger", "count": 1 }
+        { "item": "redstonecg:normal_xor", "count": 1 },
+        { "item": "redstonecg:normal_nxor", "count": 1 },
+        { "item": "redstonecg:normal_sr_latch", "count": 1 },
+        { "item": "redstonecg:normal_d_latch", "count": 1 },
+        { "item": "redstonecg:normal_t_trigger", "count": 1 },
+        { "item": "redstonecg:normal_jk_trigger", "count": 1 }
     ]
 }

@@ -1,9 +1,0 @@
-{
-  "parent": "redstonecg:custom/component",
-  "textures": {
-    "all": "redstonecg:block/parallel_line_output",
-    "particle": "redstonecg:block/parallel_line_output",
-    "0": "redstonecg:block/parallel_line_output"
-  },
-  "render_type": "solid"
-}

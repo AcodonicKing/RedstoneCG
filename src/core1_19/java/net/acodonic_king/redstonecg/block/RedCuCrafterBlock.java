@@ -25,7 +25,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.acodonic_king.redstonecg.world.inventory.RedCuCrafterGUIMenu;
+import net.acodonic_king.redstonecg.block.gui.redcu_crafter.RedCuCrafterGUIMenu;
 import net.acodonic_king.redstonecg.block.entity.RedCuCrafterBlockEntity;
 
 import io.netty.buffer.Unpooled;

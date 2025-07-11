@@ -1,9 +1,0 @@
-{
-  "parent": "redstonecg:custom/component",
-  "textures": {
-    "all": "redstonecg:block/parallel/analog/gain_on",
-    "particle": "redstonecg:block/parallel/analog/gain_on",
-    "0": "redstonecg:block/parallel/analog/gain_on"
-  },
-  "render_type": "solid"
-}

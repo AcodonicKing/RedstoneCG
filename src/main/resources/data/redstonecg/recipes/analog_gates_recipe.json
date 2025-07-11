@@ -7,14 +7,14 @@
         { "item": "minecraft:quartz" }
     ],
     "outputs": [
-        { "item": "redstonecg:floor_analog_source", "count": 1 },
-        { "item": "redstonecg:floor_analog_bias", "count": 1 },
-        { "item": "redstonecg:floor_analog_gain", "count": 1 },
-        { "item": "redstonecg:floor_analog_pass", "count": 1 },
-        { "item": "redstonecg:floor_analog_memory", "count": 1 },
-        { "item": "redstonecg:floor_analog_subtractor", "count": 1 },
-        { "item": "redstonecg:floor_analog_differential", "count": 1 },
-        { "item": "redstonecg:floor_analog_max", "count": 1 },
-        { "item": "redstonecg:floor_analog_min", "count": 1 }
+        { "item": "redstonecg:normal_analog_source", "count": 1 },
+        { "item": "redstonecg:normal_analog_bias", "count": 1 },
+        { "item": "redstonecg:normal_analog_gain", "count": 1 },
+        { "item": "redstonecg:normal_analog_pass", "count": 1 },
+        { "item": "redstonecg:normal_analog_memory", "count": 1 },
+        { "item": "redstonecg:normal_analog_subtractor", "count": 1 },
+        { "item": "redstonecg:normal_analog_differential", "count": 1 },
+        { "item": "redstonecg:normal_analog_max", "count": 1 },
+        { "item": "redstonecg:normal_analog_min", "count": 1 }
     ]
 }
